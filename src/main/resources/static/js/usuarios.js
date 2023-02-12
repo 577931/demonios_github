@@ -1,10 +1,11 @@
 // Call the dataTables jQuery plugin
 $(document).ready(function() {
-  alert("Esto es una prueba js");
+  alert("Esto es una prueba de javascript");
+  cargaUsuarios();
   $('#usuarios').DataTable();
 });
 
-async function cargaUsuarios(){
+async function cargaUsuarios() {
 
   const request = await fetch('usuario/234', {
     method: 'GET',
